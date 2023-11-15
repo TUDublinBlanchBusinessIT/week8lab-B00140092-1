@@ -41,6 +41,13 @@ class CarPolicy
         $discountedPremium = $this->yearlyPremium - ($this->yearlyPremium * $discount);
         return $discountedPremium;
     }
+
+
+    public function getInitialPremium()
+    {
+        return $this->yearlyPremium;
+    }
+
     
 
     public function __toString()
